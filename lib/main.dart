@@ -37,10 +37,18 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Text('A random idea:'),
+          Text('Atividade insanamente insana de flutter:'),
           Text(appState.current.asLowerCase),
+
+          ElevatedButton(
+            onPressed: () {
+              print('Botao apertado com sucesso');
+            },
+            child: Text('Aperte'),
+          ),
         ],
       ),
     );
+    
   }
 }
